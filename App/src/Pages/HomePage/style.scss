@@ -1,0 +1,276 @@
+/**
+* file: Home Page Style
+* date: 2020-07-22
+* author: Frank
+* lastModify: Frank 2020-07-22
+*/
+@import '../../Constant/color.scss';
+@import '../../Constant/font.scss';
+@import '../../Constant/breakPoint.scss';
+
+/* <------------------------------------ **** section1 style START **** ------------------------------------ */
+.homepage_section1 {
+    background-image: url('../../Assets/Images/homepageSection1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+.homepage_section1Mask {
+    background: rgba(106, 106, 106, 0.6);
+    overflow: hidden;
+}
+.homepage_section1 h1 {
+    font-weight: normal;
+    font-size: $fs_42;
+    font-family: $commonFamily;
+    padding: 0 30rem 0 30rem;
+    text-align: center;
+    color: $white;
+    margin-top: 15rem;
+    user-select: none;
+    @media screen and (max-width: $xl) {
+        padding: 0 15rem 0 15rem;
+    }
+    @media screen and (max-width: $md) {
+        padding: 0 3rem 0 3rem;
+        font-size: $fs_28;
+        margin-top: 8rem;
+    }
+}
+.homepage_section1 h2 {
+    font-size: $fs_19;
+    font-family: $commonFamily;
+    padding: 0 32rem 0 32rem;
+    text-align: center;
+    color: $white;
+    margin-top: 4rem;
+    user-select: none;
+    @media screen and (max-width: $xl) {
+        padding: 0 16rem 0 16rem;
+    }
+    @media screen and (max-width: $md) {
+        padding: 0 3rem 0 3rem;
+        font-size: $fs_16;
+    }
+}
+.homepage_section1 div {
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    user-select: none;
+    @media screen and (max-width: $md) {
+        padding-bottom: 5rem;
+    }
+}
+/* <------------------------------------ **** section1 style END **** ------------------------------------ */
+
+/* <------------------------------------ **** section2  START **** ------------------------------------ */
+.homepage_section2 {
+    width: 100%;
+    background: rgba(224, 224, 224, 0.4);
+    overflow: hidden;
+    padding-bottom: 6rem;
+}
+.homepage_section2 > div {
+    text-align: center;
+    margin-top: 6rem;
+}
+.homepage_section2 > div > h1 {
+    font-weight: normal;
+    font-size: $fs_28;
+    color: $darkBlue;
+    user-select: none;
+    padding: 0 2rem 0 2rem;
+}
+
+.homepage_section2CardIconWrapper {
+    margin: 0;
+    width: 8rem;
+    height: 8rem;
+    background: $darkBlue;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+@mixin cardIcon {
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    margin: auto;
+    margin-top: 2rem;
+}
+.homepage_section2CardIcon1 {
+    @include cardIcon;
+    background-image: url('../../Assets/Images/icon/lock.png');
+}
+.homepage_section2CardIcon2 {
+    @include cardIcon;
+    background-image: url('../../Assets/Images/icon/hourglass.png');
+}
+.homepage_section2CardIcon3 {
+    @include cardIcon;
+    background-image: url('../../Assets/Images/icon/target.png');
+}
+.homepage_section2CardIcon4 {
+    @include cardIcon;
+    background-image: url('../../Assets/Images/icon/laptop.png');
+}
+.homepage_section2 h2 {
+    font-weight: normal;
+    color: $darkBlue;
+    font-size: $fs_16;
+    margin-top: 1.8rem;
+    user-select: none;
+    margin-bottom: 6rem;
+}
+/* <------------------------------------ **** section2  END **** ------------------------------------ */
+
+/* <------------------------------------ **** section3 START **** ------------------------------------ */
+.homepage_section3 {
+    background-image: url('../../Assets/Images/homepageSection3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.homepage_section3Mask {
+    width: 100%;
+    padding-bottom: 12rem;
+    background: rgba(106, 106, 106, 0.6);
+    overflow: hidden;
+    @media screen and (max-width: $md) {
+        padding-bottom: 10rem;
+    }
+}
+.homepage_section3title {
+    font-size: $fs_42;
+    font-family: $commonFamily;
+    color: $white;
+    margin-top: 12rem;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 8rem;
+    @media screen and (max-width: $md) {
+        font-size: $fs_28;
+        margin-bottom: 5rem;
+    }
+}
+.homepage_section3BlockWrapper {
+    @media screen and (max-width: $md) {
+        margin-top: 5rem;
+    }
+}
+.homepage_section3placeHolder {
+    @media screen and (max-width: $md) {
+        display: none;
+    }
+}
+.homepage_section3DivideDot {
+    width: 2rem;
+    height: 2rem;
+    background: $orange;
+    border-radius: 50%;
+    margin: auto;
+    @media screen and (max-width: $md) {
+        margin-top: 0.5rem;
+    }
+}
+.homepage_section3DivideLine {
+    width: 0.2rem;
+    height: 20rem;
+    background: $orange;
+    margin: auto;
+    @media screen and (max-width: $md) {
+        display: none;
+    }
+}
+.homepage_section3TextWrapper > h2 {
+    font-size: $fs_19;
+    color: $orange;
+    user-select: none;
+}
+.homepage_section3TextWrapper > p {
+    font-size: $fs_16;
+    color: $white;
+    width: 80%;
+    user-select: none;
+    @media screen and (max-width: $md) {
+        width: 90%;
+    }
+}
+.homepage_section3TextLeftWrapper {
+    text-align: right;
+}
+.homepage_section3TextLeftWrapper > h2 {
+    font-size: $fs_19;
+    color: $orange;
+    user-select: none;
+}
+.homepage_section3TextLeftWrapper > p {
+    font-size: $fs_16;
+    color: $white;
+    width: 80%;
+    float: right;
+    user-select: none;
+    @media screen and (max-width: $md) {
+        width: 90%;
+    }
+}
+/* <------------------------------------ **** section3 END **** ------------------------------------ */
+
+/* <------------------------------------ **** section4 START **** ------------------------------------ */
+.homepage_section4 {
+    background-image: url('../../Assets/Images/homepageSection4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.homepage_section4Mask {
+    width: 100%;
+    background: rgba(106, 106, 106, 0.6);
+    overflow: hidden;
+}
+.homepage_section4Mask > div {
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: $md) {
+        width: 100%;
+    }
+}
+.homepage_section4Mask h1 {
+    font-size: $fs_28;
+    color: $white;
+    font-family: $commonFamily;
+    text-align: center;
+    user-select: none;
+    padding-top: 8rem;
+    @media screen and (max-width: $md) {
+        font-size: $fs_19;
+        margin-top: 0;
+    }
+}
+.homepage_section4Mask p {
+    font-size: $fs_16;
+    color: $white;
+    font-family: $commonFamily;
+    text-align: center;
+    margin-top: 9rem;
+    padding: 0 4rem 0 4rem;
+    user-select: none;
+    margin-bottom: 10rem;
+
+    @media screen and (max-width: $md) {
+        margin-top: 5rem;
+    }
+}
+/* <------------------------------------ **** section4 END **** ------------------------------------ */
+
+/* <------------------------------------ **** section5 START **** ------------------------------------ */
+.homepage_section5 {
+    background: rgba(69, 69, 69, 0.8);
+}
+/* <------------------------------------ **** section5 END **** ------------------------------------ */
