@@ -14,9 +14,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: pwd
         run: pwd
-      - name: ls
+      - name: change working directory
         run: ls
-      - name: cd
-        run: cd App/
+        working-directory: ./App
       - name: after cd pwd
         run: pwd
