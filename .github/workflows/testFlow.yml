@@ -5,7 +5,11 @@ on:
   push:
     branches:
       - "master"
-
+# setup default working dir
+defaults:
+  run:
+    shell: bash
+    working-directory: ./App
 # the jobs to run this ci
 jobs:
   build:
@@ -16,6 +20,5 @@ jobs:
         run: pwd
       - name: change working directory
         run: ls
-        working-directory: ./App
       - name: after cd ls
         run: ls
