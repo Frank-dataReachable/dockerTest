@@ -23,7 +23,7 @@ const HomePage = (): JSX.Element => {
     /* <------------------------------------ **** FUNCTION START **** ------------------------------------ */
     /************* This section will include this component general function *************/
     /* <------------------------------------ **** FUNCTION END **** ------------------------------------ */
-    return <Row>this is the hompage</Row>;
+    return <Row>test with new git</Row>;
 };
 export default HomePage;
 /* <------------------------------------ **** FUNCTION COMPONENT END **** ------------------------------------ */
