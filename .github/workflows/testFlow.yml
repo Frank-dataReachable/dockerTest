@@ -12,7 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout branch to masker
-        run: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: echo "hello world"
         run: echo "hello world"
