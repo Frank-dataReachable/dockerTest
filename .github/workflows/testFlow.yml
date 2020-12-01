@@ -3,9 +3,11 @@ name: TestWrokFlow
 # when to trage this work flow
 on:
   push:
-    branches: [master]
+    branches:
+      - "master"
   pull_request:
-    branches: [master]
+    branches:
+      - "master"
 
 # the jobs to run this ci
 jobs:
