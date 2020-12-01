@@ -1,5 +1,5 @@
 # work flow name
-name: TestWrokFlow
+name: Publish Docker Image
 # when to trage this work flow
 on:
   push:
@@ -15,6 +15,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: install package
-        run: npm i
+      #pull all branch and tag data
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Push to github package
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: frank-datareachable/dockertest/react-nginx
+          tag_with_ref: true
