@@ -1,0 +1,18 @@
+# work flow name
+name: TestWrokFlow
+# when to trage this work flow
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+# the jobs to run this ci
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout branch to masker
+        run: actions/checkout@master
+      - name: echo "hello world"
+        run: echo "hello world"
