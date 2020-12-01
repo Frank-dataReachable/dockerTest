@@ -23,7 +23,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.GH_PKG_ACCESS_TOKEN }}
+          tags: latest
           registry: docker.pkg.github.com
           repository: frank-datareachable/dockertest/react-nginx
           dockerfile: Dockerfile.ci
