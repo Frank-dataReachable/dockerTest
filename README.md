@@ -17,6 +17,7 @@ This is the DataReachable Website specifications, it will include project struct
 ## Overview
 
 ```
+
 ProjectSample/ .................... Project Folder
 ├─ package_backup/ ................ Package.json Backup Folder
 ├─ public/ ........................ Public Static Files Root Folder
