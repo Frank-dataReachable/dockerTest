@@ -15,4 +15,4 @@ jobs:
       - name: cd to App/
         run: cd App/
       - name: install package
-        run: npm i
+        run: echo PWA
