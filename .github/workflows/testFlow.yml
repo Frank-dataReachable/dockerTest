@@ -17,5 +17,5 @@ jobs:
       - name: change working directory
         run: ls
         working-directory: ./App
-      - name: after cd pwd
-        run: pwd
+      - name: after cd ls
+        run: ls
