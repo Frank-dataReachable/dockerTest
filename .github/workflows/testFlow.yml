@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: echo "the new version"
-        run: echo "this is the new version"
+      - name: cd to app file
+        run: cd App/
+      - name: install package
+        run: npm i
