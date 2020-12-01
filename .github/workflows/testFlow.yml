@@ -26,4 +26,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           registry: docker.pkg.github.com
           repository: frank-datareachable/dockertest/react-nginx
-          dockerfile: ./App/Dockerfile
+          dockerfile: Dockerfile.ci
