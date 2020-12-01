@@ -16,3 +16,7 @@ jobs:
         run: pwd
       - name: ls
         run: ls
+      - name: cd
+        run: cd App/
+      - name: after cd pwd
+        run: pwd
